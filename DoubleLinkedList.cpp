@@ -51,9 +51,9 @@ int main() {
     return 0;
 }
 
-Node* newNode(int iPayload) {
+Node* newNode(int iValue) {
     Node* temp = (Node*) malloc(sizeof(Node));
-    temp->iValue = iPayload;
+    temp->iValue = iValue;
     temp->ptrNext = nullptr;
     temp->ptrPrev = nullptr;
     
