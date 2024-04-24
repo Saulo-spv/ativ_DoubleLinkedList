@@ -34,18 +34,18 @@ int main() {
     // Procurando um nó com valor 20
     Node* node20 = searchNodebyValue(head, 20);
     if (node20 != nullptr) {
-        cout << "\nNó com valor 20 encontrado." << endl;
+        cout << "Nó com valor 20 encontrado." << endl;
     }
 
     // Inserindo um nó antes do nó com valor 20
     if (node20 != nullptr) {
-        cout << "\nInserindo 15 antes do nó com valor 20:" << endl;
+        cout << "Inserindo 15 antes do nó com valor 20:" << endl;
         insertBefore(node20, 15);
         showList(head);
     }
 
     // Deletando o nó com valor 20
-    cout << "\nDeletando o nó com valor 20:" << endl;
+    cout << "Deletando o nó com valor 20:" << endl;
     deleteNodebyValue(&head, 20);
     showList(head);
     return 0;
